@@ -1,4 +1,7 @@
 import java.io.*;
+
+import static java.io.File.separator;
+
 public class show {
     public static void main(String[] args) throws IOException{
         String str = "流输出";
@@ -13,7 +16,8 @@ public class show {
         }
         inStr.close();
         outStr.close();
-        System.out.print(outStr.toString());
+        System.out.print(outStr.toString()+separator);
         //test123
+
     }
 }
